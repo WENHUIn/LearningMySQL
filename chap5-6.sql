@@ -95,6 +95,8 @@ where invoice_total > ALL (
              where client_id =3);
 
 -- = ANY equals IN	
+
+-- correlated subquery
 select *
 from invoices 
 where invoice_total > (
