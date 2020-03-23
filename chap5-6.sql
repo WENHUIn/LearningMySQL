@@ -102,7 +102,7 @@ from invoices
 where invoice_total > (
        select avg(invoice_total)
        from invoices i
-       where i.invoice_id  = invoice_id);
+       where i.client_id  = client_id);
        
 -- exist
 -- find products that have never been ordered
